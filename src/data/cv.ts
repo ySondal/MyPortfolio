@@ -142,7 +142,7 @@ export const publications = [
 
 export const Projets = [
 	{//laravel,next, tailwndcss, Psql,github
-	  imageSrc: `${import.meta.env.PUBLIC_BASE_URL}/Projet3_Ecom.png`,
+	  imageSrc: `${import.meta.env.PUBLIC_BASE_URL}Projet3_Ecom.png`,
 	  title: 'site E-comerce',
 	  description: 'Ventes Chaussures',
 	  techIcons: [
