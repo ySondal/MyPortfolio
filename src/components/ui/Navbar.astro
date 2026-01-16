@@ -1,0 +1,47 @@
+---
+
+import {profile} from '../../settings'
+import SocialIcons from './SocialIcons.astro'
+import ProfilePictures from '@/assets/Screenshot_20241212-190943.jpg'
+import { getCollection } from 'astro:content'
+import { template } from '@/settings'
+import Image from 'astro/components/Image.astro'
+
+const isBlogPopulated = await getCollection('blog').then(collection => collection.length > 0)
+
+const {fullName, title} = profile
+---
+<aside
+	class='px-4 pt-4 h-screen w-[20rem] bg-base-200 text-base-content flex flex-col '
+>
+	<div class='flex flex-col my-8 justify-between h-full'>
+		<div>
+			<div class='flex justify-center items-center flex-col'>
+				  <img 
+					src={`${template.base}/Screenshot_20241212-190943.jpg`} 
+					alt={`Image pour ${title}`} 
+					class='mask mask-circle size-44' 
+					loading="lazy"
+				/>
+				<h1 class="text-lg font-black mt-8  ">{title} </h1>
+				<span class="">RATOVONIAINA T. Dalson</span>
+			</div>
+			<nav class='mx-4 mt-16'>
+				<ul class='space-y-4 menu grow shrink menu-md overflow-y-auto'>
+					<li>
+                        <a href=`${template.base}/` class='text-lg'>Acceuil</a>
+					</li>
+					<li>
+                        <a href=`${template.base}/AllProject` class='text-lg'>Tous les projets</a>
+                    </li>
+					<li>
+                        <a href=`${template.base}/cv` class='text-lg'>CV</a>
+                    </li>
+				</ul>
+			</nav>
+		</div>
+		<div class='mx-4'>
+			<SocialIcons/>
+		</div>
+	</div>
+</aside>

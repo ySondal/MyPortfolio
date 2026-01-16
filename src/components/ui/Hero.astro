@@ -1,0 +1,40 @@
+---
+
+import Image from 'astro/components/Image.astro'
+import SocialIcons from './SocialIcons.astro'
+import { template } from '@/settings'
+
+
+const {fullName, title, institute, profilePicture} = Astro.props
+---
+<div class='flex-1'>
+  <h1 class='text-5xl font-bold mb-6'>
+    Binvenue! Je suis Mr<span class=' text-[#FF3F6DD8]'>{" "+fullName}</span>
+  </h1>
+  <p class='text-xl text-gray-600 mb-4'>{title}{institute ? ` at ${institute}` : ''}</p>
+  <p class='text-lg mb-6'>
+   Developeur fullstack, Passionné par l’innovation technologique, je suis constamment à la recherche de 
+    nouveaux défis me permettant d’évoluer.
+  </p>
+  <div class='flex gap-4'>
+    <SocialIcons />
+  </div>
+</div>
+<div class='size-72 lg:block hidden'>
+  <!-- Add your profile image -->
+  <!--Image 
+    src={profilePicture}
+    alt={fullName}
+    class='w-full h-full mask mask-circle size-44'
+  -->
+
+
+  <img 
+        src={`${template.base}/profile_picture1.jpg`} 
+        alt={`Image pour ${title}`} 
+       class='w-full h-full mask mask-circle size-44'
+        loading="lazy"
+    />
+    
+
+</div>
