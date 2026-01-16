@@ -142,7 +142,7 @@ export const publications = [
 
 export const Projets = [
 	{//laravel,next, tailwndcss, Psql,github
-	  imageSrc: `${template.base}/Projet3_Ecom.png`,
+	  imageSrc: `${import.meta.env.PUBLIC_BASE_URL}/Projet3_Ecom.png`,
 	  title: 'site E-comerce',
 	  description: 'Ventes Chaussures',
 	  techIcons: [
@@ -165,7 +165,7 @@ export const Projets = [
 	  ],
 	},
 	{
-		imageSrc: `${template.base}/Porjet2_GExtr.png`,
+		imageSrc: `${import.meta.env.PUBLIC_BASE_URL}/Porjet2_GExtr.png`,
 		title: 'Application web',
 		description: 'Surveillance environnementale avec des outils modernes.',
 		techIcons: [
@@ -180,7 +180,7 @@ export const Projets = [
 		],
 	  },
 	  {// Next.js, Nest.js, tailwindcss, Psql,github
-		imageSrc: `${template.base}/Porjet2_GExtr.png`,
+		imageSrc: `${import.meta.env.PUBLIC_BASE_URL}/Porjet2_GExtr.png`,
 		title: 'Projet Nature',
 		description: 'Surveillance environnementale avec des outils modernes.',
 		techIcons: [
@@ -195,7 +195,7 @@ export const Projets = [
 		],
 	  },
 	  {
-		imageSrc: `${template.base}/Porjet2_GExtr.png`,
+		imageSrc: `${import.meta.env.PUBLIC_BASE_URL}/Porjet2_GExtr.png`,
 		title: 'Projet Nature',
 		description: 'Surveillance environnementale avec des outils modernes.',
 		techIcons: [
@@ -210,7 +210,7 @@ export const Projets = [
 		],
 	  },
 	{//java swing, mysql, Netbeans
-	  imageSrc: `${template.base}/Projet1_Mconsomptible.png`,
+	  imageSrc: `${import.meta.env.PUBLIC_BASE_URL}/Projet1_Mconsomptible.png`,
 	  title: 'E-Commerce',
 	  description: 'Une boutique en ligne construite avec Laravel et Vue.',
 	  techIcons: [

@@ -23,7 +23,7 @@ export const template = {
 	darkTheme: 'dark', // Theme2
 	excerptLength: 200,
 	postPerPage: 5,
-    base: '/MyPortfolio' // Repository name /
+    base: import.meta.env.PUBLIC_BASE_URL// Repository name /
 }
 
 export const seo = {

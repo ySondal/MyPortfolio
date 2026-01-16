@@ -30,7 +30,7 @@ const {fullName, title, institute, profilePicture} = Astro.props
 
 
   <img 
-        src={`${template.base}/profile_picture1.jpg`} 
+        src={`${import.meta.env.PUBLIC_BASE_URL}/profile_picture1.jpg`} 
         alt={`Image pour ${title}`} 
        class='w-full h-full mask mask-circle size-44'
         loading="lazy"

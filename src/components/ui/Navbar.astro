@@ -18,7 +18,7 @@ const {fullName, title} = profile
 		<div>
 			<div class='flex justify-center items-center flex-col'>
 				  <img 
-					src={`${template.base}/Screenshot_20241212-190943.jpg`} 
+					src={`${import.meta.env.PUBLIC_BASE_URL}/Screenshot_20241212-190943.jpg`} 
 					alt={`Image pour ${title}`} 
 					class='mask mask-circle size-44' 
 					loading="lazy"
@@ -29,13 +29,13 @@ const {fullName, title} = profile
 			<nav class='mx-4 mt-16'>
 				<ul class='space-y-4 menu grow shrink menu-md overflow-y-auto'>
 					<li>
-                        <a href=`${template.base}/` class='text-lg'>Acceuil</a>
+                        <a href=`${import.meta.env.PUBLIC_BASE_URL}` class='text-lg'>Acceuil</a>
 					</li>
 					<li>
-                        <a href=`${template.base}/AllProject` class='text-lg'>Tous les projets</a>
+                        <a href=`${import.meta.env.PUBLIC_BASE_URL}AllProject` class='text-lg'>Tous les projets</a>
                     </li>
 					<li>
-                        <a href=`${template.base}/cv` class='text-lg'>CV</a>
+                        <a href=`${import.meta.env.PUBLIC_BASE_URL}cv` class='text-lg'>CV</a>
                     </li>
 				</ul>
 			</nav>
